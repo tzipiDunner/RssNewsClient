@@ -1,4 +1,3 @@
-// NewsItem.js
 import React from 'react';
 import NewsDetails from './NewsDetails';
 import '../css/NewsItem.css';
