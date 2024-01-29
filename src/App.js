@@ -4,7 +4,7 @@ import NewsList from './components/NewsList';
 import NewsDetails from './components/NewsDetails';
 import './App.css';
 
-axios.defaults.baseURL=process.env.REACT_APP_BASE_URl;
+//axios.defaults.baseURL=process.env.REACT_APP_BASE_URl;
 const App = () => {
   const [news, setNews] = useState([]);
   const [selectedTopic, setSelectedTopic] = useState(null);
