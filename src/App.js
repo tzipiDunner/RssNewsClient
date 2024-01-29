@@ -4,14 +4,16 @@ import NewsList from './components/NewsList';
 import NewsDetails from './components/NewsDetails';
 import './App.css';
 
+axios.defaults.baseURL=process.env.REACT_APP_BASE_URl;
 const App = () => {
   const [news, setNews] = useState([]);
   const [selectedTopic, setSelectedTopic] = useState(null);
 
+
   useEffect(() => {
     const fetchNews = async () => {
       try {
-        const response = await axios.get('https://localhost:7297/api/news');
+        const response = await axios.get(`${baseURL}/news`);
         setNews(response.data);
         // Set the first item as the selectedTopic by default
         setSelectedTopic(response.data[0]);
