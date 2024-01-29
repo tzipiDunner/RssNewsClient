@@ -9,7 +9,6 @@ const App = () => {
   const [news, setNews] = useState([]);
   const [selectedTopic, setSelectedTopic] = useState(null);
 
-
   useEffect(() => {
     const fetchNews = async () => {
       try {
